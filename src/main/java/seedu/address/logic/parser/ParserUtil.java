@@ -4,7 +4,6 @@ import static java.util.Objects.requireNonNull;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 import seedu.address.commons.core.index.Index;
@@ -124,6 +123,12 @@ public class ParserUtil {
         return tagSet;
     }
 
+    /**
+     * Create remark after parsing input.
+     * @param remark
+     * @return Created remark
+     * @throws ParseException
+     */
     public static Remark parseRemark(String remark) throws ParseException {
         requireNonNull(remark);
         String trimmedRemark = remark.trim();
