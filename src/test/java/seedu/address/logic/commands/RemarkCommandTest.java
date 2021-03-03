@@ -14,8 +14,7 @@ import seedu.address.model.person.Person;
 import seedu.address.model.person.Remark;
 import seedu.address.testutil.PersonBuilder;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static seedu.address.testutil.TypicalIndexes.INDEX_FIRST_PERSON;
+
 import static seedu.address.testutil.TypicalPersons.getTypicalAddressBook;
 
 class RemarkCommandTest {
