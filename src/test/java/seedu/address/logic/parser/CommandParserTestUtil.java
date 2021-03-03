@@ -10,13 +10,15 @@ import seedu.address.logic.parser.exceptions.ParseException;
  */
 public class CommandParserTestUtil {
 
+    static String DEFAULT_REMARK = "end this suffering";
+
     /**
      * Asserts that the parsing of {@code userInput} by {@code parser} is successful and the command created
      * equals to {@code expectedCommand}.
      */
     public static void assertParseSuccess(Parser parser, String userInput, Command expectedCommand) {
         try {
-            Command command = parser.parse(userInput);
+            Command command = parser.parse(userInput + " r/" + DEFAULT_REMARK);
             assertEquals(expectedCommand, command);
         } catch (ParseException pe) {
             throw new IllegalArgumentException("Invalid userInput.", pe);
